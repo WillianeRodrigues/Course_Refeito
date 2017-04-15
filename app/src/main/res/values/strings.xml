@@ -1,0 +1,72 @@
+<resources>
+
+    <string name="description_image">description_image</string>
+
+    <!-- Splash e Slide Screen -->
+    <string name="app_name">course</string>
+    <string name="slide_01_title">Teste o nível de conhecimento em alfabetização computacional</string>
+    <string name="slide_01_subtitle"><![CDATA[<<<Deslize]]></string>
+    <string name="button_start_slide_04">Iniciar</string>
+    <string name="button_sing_in_slide_04">Criar uma conta</string>
+
+    <!-- Screen Register -->
+    <string name="activity_register">Registrar-se</string>
+    <string name="app_name_register">Contas</string>
+    <string name="new_account">Criar uma nova conta</string>
+    <string name="new_account_description">A sua conta do course lhe dá acesso ao aplicativo e as atividades</string>
+    <string name="about_count">Informações necessárias para sua conta</string>
+    <string name="hint_name">Nome</string>
+    <string name="hint_lastname">Sobrenome</string>
+    <string name="hint_username">Usuário</string>
+    <string name="action_register_short">Registrar</string>
+    <string name="hint_password">Senha</string>
+    <string name="text_button_register">Cadastrar</string>
+
+    <!-- Screen Login -->
+    <string name="activity_login">Entrar</string>
+    <string name="prompt_email">Usuário</string>
+    <string name="prompt_password">Senha</string>
+    <string name="action_sign_in">ENTRAR</string>
+    <string name="action_sign_in_short">ENTRAR</string>
+    <string name="button_login">Entrar</string>
+
+    <!-- Strings related to login -->
+    <string name="error_invalid_email">Nome de usuário inválido</string>
+    <string name="no_register_email">Este nome de usuário não está cadastrado</string>
+    <string name="error_invalid_password">Senha no formato inválido, deve conter entre 4 e 16 caracteres</string>
+    <string name="error_incorrect_password">A senha está incorreta</string>
+    <string name="error_field_required">Este campo é necessário</string>
+    <string name="username_existing">Nome de usuário já existe</string>
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- Strings related to Main Screen -->
+    <string name="drawer_point">Pontuação</string>
+    <string name="drawer_point_litle">pontos</string>
+    <string name="select_new_content">Escolha um conteúdo:</string>
+    <string name="know_computer">Conheça o computador</string>
+    <string name="operational_systems">Sistemas Operacionais</string>
+    <string name="text_editors">Editores de Texto</string>
+    <string name="sheet_editors">Editores de Planilhas</string>
+    <string name="publishers_presentations">Editores de Apresentações</string>
+    <string name="internet">Internet</string>
+
+    <!-- Strings related to DrawerMenu Main -->
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="action_about">Sobre</string>
+    <string name="nav_ranking">Ranking</string>
+    <string name="nav_settings">Configurações</string>
+    <string name="nav_exit">Sair</string>
+
+    <!-- Strings related to Level Screen -->
+    <string name="level_text_basic">Nível Básico</string>
+    <string name="level_description">Descrição do nível</string>
+    <string name="level_text_intermediate">Nível Intermediário</string>
+    <string name="level_text_advanced">Nível Avançado</string>
+
+    <!-- Strings related to Settings Screen -->
+    <string name="change_name_user">Alterar nome de usuário:</string>
+    <string name="change_password_user">Alterar senha:</string>
+
+
+</resources>

@@ -1,0 +1,375 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activities.RankingActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar_ranking"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:elevation="4dp"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="@dimen/default_margin"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="128dp"
+            android:layout_gravity="center"
+            android:contentDescription="@string/description_image"
+            android:src="@drawable/ic_people_shadow" />
+
+        <br.com.usp.willianerodrigues.course.util.RobotoRegular
+            android:id="@+id/ranking_name_user"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/default_margin"
+            android:gravity="center"
+            android:text="Williane Rodrigues"
+            android:textColor="@color/md_black_1000"
+            android:textSize="@dimen/fontsize_title" />
+
+        <br.com.usp.willianerodrigues.course.util.RobotoRegular
+            android:id="@+id/ranking_pontos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="520 PE"
+            android:textColor="@color/md_grey_800"
+            android:textSize="@dimen/fontsize_subhead" />
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/description_image"
+                        android:src="@drawable/ico_pc" />
+
+                    <br.com.usp.willianerodrigues.course.util.RobotoRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:layout_marginLeft="@dimen/default_margin"
+                        android:text="@string/know_computer"
+                        android:textColor="@color/md_black_1000"
+                        android:textSize="@dimen/fontsize_subhead" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ProgressBar
+                            android:id="@+id/ranking_progress_know_computer"
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:max="100"
+                            android:progress="90" />
+
+                        <br.com.usp.willianerodrigues.course.util.RobotoRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="90"
+                            android:textColor="#b0026a"
+                            android:textSize="@dimen/fontsize_subhead" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/description_image"
+                        android:src="@drawable/ico_windows_disable" />
+
+                    <br.com.usp.willianerodrigues.course.util.RobotoRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:layout_marginLeft="@dimen/default_margin"
+                        android:text="@string/operational_systems"
+                        android:textColor="@color/md_grey_500"
+                        android:textSize="@dimen/fontsize_subhead" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ProgressBar
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:max="100"
+                            android:progress="0" />
+
+                        <br.com.usp.willianerodrigues.course.util.RobotoRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="00"
+                            android:textColor="@color/md_blue_grey_500"
+                            android:textSize="@dimen/fontsize_subhead" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/description_image"
+                        android:src="@drawable/ico_notepad_disable" />
+
+                    <br.com.usp.willianerodrigues.course.util.RobotoRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:layout_marginLeft="@dimen/default_margin"
+                        android:text="@string/text_editors"
+                        android:textColor="@color/md_grey_500"
+                        android:textSize="@dimen/fontsize_subhead" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ProgressBar
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:max="100"
+                            android:progress="0" />
+
+                        <br.com.usp.willianerodrigues.course.util.RobotoRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="00"
+                            android:textColor="@color/md_blue_grey_500"
+                            android:textSize="@dimen/fontsize_subhead" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/description_image"
+                        android:src="@drawable/ico_sheet_disable" />
+
+                    <br.com.usp.willianerodrigues.course.util.RobotoRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:layout_marginLeft="@dimen/default_margin"
+                        android:text="@string/sheet_editors"
+                        android:textColor="@color/md_grey_500"
+                        android:textSize="@dimen/fontsize_subhead" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ProgressBar
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:max="100"
+                            android:progress="0" />
+
+                        <br.com.usp.willianerodrigues.course.util.RobotoRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="00"
+                            android:textColor="@color/md_blue_grey_500"
+                            android:textSize="@dimen/fontsize_subhead" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/description_image"
+                        android:src="@drawable/ico_presentation_disable" />
+
+                    <br.com.usp.willianerodrigues.course.util.RobotoRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:layout_marginLeft="@dimen/default_margin"
+                        android:text="@string/publishers_presentations"
+                        android:textColor="@color/md_grey_500"
+                        android:textSize="@dimen/fontsize_subhead" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ProgressBar
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:max="100"
+                            android:progress="0" />
+
+                        <br.com.usp.willianerodrigues.course.util.RobotoRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="00"
+                            android:textColor="@color/md_blue_grey_500"
+                            android:textSize="@dimen/fontsize_subhead" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:layout_width="48dp"
+                        android:layout_height="48dp"
+                        android:layout_gravity="center"
+                        android:contentDescription="@string/description_image"
+                        android:src="@drawable/ico_web_disable" />
+
+                    <br.com.usp.willianerodrigues.course.util.RobotoRegular
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/default_margin"
+                        android:layout_weight="1"
+                        android:gravity="start"
+                        android:layout_marginLeft="@dimen/default_margin"
+                        android:text="@string/internet"
+                        android:textColor="@color/md_grey_500"
+                        android:textSize="@dimen/fontsize_subhead" />
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center">
+
+                        <ProgressBar
+                            android:layout_width="56dp"
+                            android:layout_height="56dp"
+                            android:max="100"
+                            android:progress="0" />
+
+                        <br.com.usp.willianerodrigues.course.util.RobotoRegular
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerHorizontal="true"
+                            android:layout_centerVertical="true"
+                            android:gravity="center"
+                            android:text="00"
+                            android:textColor="@color/md_blue_grey_500"
+                            android:textSize="@dimen/fontsize_subhead" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </LinearLayout>
+
+</LinearLayout>
